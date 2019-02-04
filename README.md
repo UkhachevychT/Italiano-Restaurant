@@ -1,6 +1,6 @@
 # Italiano-Restaurant
 
-An Django project for my portfolio. Represent web-site of an Italian restaurant.
+Django project for my portfolio. Represent web-site of an Italian restaurant.
 Front-end was taken from https://bootstraptemple.com/p/italiano-bootstrap-restaurant-template
 I did back-end.
 
