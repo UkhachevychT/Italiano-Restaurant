@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section id="gallery" class="gallery">
+    <div class="container text-center">
+        <header>
+            <h2>Our Gallery</h2>
+            <h3>Discover the photo gallery</h3>
+        </header>
+
+        <div class="gellery">
+            <div class="row">
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg01-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg01.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg02-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg02.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg03-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg03.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg05-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg05.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg06-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg06.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg04-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg04.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
+                    <div class="item">
+                        <img src="{% static 'img/bg07-small.jpg' %}" alt="image">
+                        <a href="{% static 'img/bg07.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                            <span class="icon-search"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

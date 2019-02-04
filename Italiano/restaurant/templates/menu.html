@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="dishes" class="dishes">
+    <div class="container text-center">
+        <header>
+            <h2>Recomended Dishes</h2>
+            <h3>Checkout our recomendations</h3>
+        </header>
+        <!-- Set up your HTML -->
+        <div class="owl-carousel owl-theme">
+            <!-- item -->
+            {% for dish in recomended_dishes %}
+                <div class="dish">
+                    <div class="profile">
+                        <img src="{{ dish.img.url }}" class="img-responsive" alt="dish name">
+                        <div class="price">
+                            <span>{{ dish.price }}</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4>{{dish.name}}</h4>
+                        <p>{{dish.description}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="menu">
+    <div class="container">
+        <header class="text-center">
+            <h2>Our food menu</h2>
+            <h3>Our most popular menu</h3>
+        </header>
+
+        <div class="menu">
+            <!-- Tabs Navigatin -->
+            <ul class="nav nav-tabs text-center has-border" role="tablist">
+                <li role="presentation"><a href="#salads" aria-controls="salads" role="tab" data-toggle="tab">Salads</a></li>
+                <li role="presentation"><a href="#mains" aria-controls="mains" role="tab" data-toggle="tab">Mains</a></li>
+                <li role="presentation"><a href="#pizza" aria-controls="pizza" role="tab" data-toggle="tab">Pizza</a></li>
+                <li role="presentation"><a href="#deserts" aria-controls="deserts" role="tab" data-toggle="tab">Deserts</a></li>
+                <li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">Drinks</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                {% for category in categories %}                
+                    <div role="tabpanel" class="tab-pane fade" id="{{category.name}}">
+                        <div class="row">
+                            {% for dish in category.dish_set.all %}
+                                <!-- {% if dish.category.name == category.name %} -->
+                                    <div class="col-sm-6">
+                                        {% if dish.recomended %}
+                                            <div class="menu-item recommended has-border clearfix">
+                                                <div class="item-details pull-left">
+                                                    <h5>{{dish.name}}</h5>
+                                                    <p>{{dish.description}}</p>
+                                                </div>
+                                                <div class="item-price pull-right">
+                                                    <strong class="text-large text-primary">{{dish.price}}</strong>
+                                                    <span class="text-medium">Recommended</span>
+                                                </div>
+                                            </div>
+                                        {% else %}
+                                            <div class="menu-item clearfix">
+                                                <div class="item-details pull-left">
+                                                    <h5>{{dish.name}}</h5>
+                                                    <p>{{dish.description}}</p>
+                                                </div>
+                                                <div class="item-price pull-right">
+                                                    <strong class="text-large text-primary">{{dish.price}}</strong>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                <!-- {% endif %} -->
+                            {% endfor %}
+                                        
+                        </div>
+                    </div>                   
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

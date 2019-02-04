@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block content %}
+
+<section id="offers" class="offers">
+    <div class="container text-center">
+
+        <header>
+            <h2>Special Offers</h2>
+            <h3>Don't miss our offers</h3>
+        </header>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="item">
+                    <div class="discount">
+                        <span>40% <br> Off</span>
+                    </div>
+                    <div class="profile">
+                        <img src="{% static 'img/dish-d.png' %}" alt="dish name" class="img-responsive">
+                    </div>
+                    <div class="text">
+                        <h4>Dish Name</h4>
+                        <p class="after text-primary text-large">30.00$</p>
+                        <p class="before text-muted text-large">50.00$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="item">
+                    <div class="discount">
+                        <span>40% <br> Off</span>
+                    </div>
+                    <div class="profile">
+                        <img src="{% static 'img/dish-d.png' %}" alt="dish name" class="img-responsive">
+                    </div>
+                    <div class="text">
+                        <h4>Dish Name</h4>
+                        <p class="after text-primary text-large">30.00$</p>
+                        <p class="before text-muted text-large">50.00$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="item">
+                    <div class="discount">
+                        <span>40% <br> Off</span>
+                    </div>
+                    <div class="profile">
+                        <img src="{% static 'img/dish-d.png' %}" alt="dish name" class="img-responsive">
+                    </div>
+                    <div class="text">
+                        <h4>Dish Name</h4>
+                        <p class="after text-primary">30.00$</p>
+                        <p class="before text-muted">50.00$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

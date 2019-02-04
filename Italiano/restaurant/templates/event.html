@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="events" class="events">
+    <div class="container">
+        <header class="text-center">
+            <h2>Upcoming Events</h2>
+            <h3>Don’t miss our awesome events</h3>
+        </header>
+
+        <div class="row">
+            <!-- Profile Side  -->
+            <div class="col-sm-6">
+                <div class="profile has-border" style="background-image: url(img/event-bg.jpg);">
+                    <ul class="date list-unstyled list-inline clearfix">
+                        <li class="day pull-left">15<sup>th</sup></li>
+                        <li class="month pull-left">December <span>2016</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Details Side  -->
+            <div class="col-sm-6">
+                <div class="details">
+                    <h3>Italian Master Class</h3>
+                    <h4 class="text-primary">15 December 2016 | 20:00</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                    <a href="#" class="read-more btn-unique">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

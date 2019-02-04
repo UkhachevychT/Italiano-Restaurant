@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{% include "head.html" %}
+
+<body>
+
+    <div class="page-holder">
+        {% include "header.html" %}
+
+        {% block content %}
+        {% endblock content %}
+
+        {% include "footer.html" %}
+        <div id="scrollTop" class="btn-unique"><i class="fa fa-angle-up"></i></div>
+
+    </div>
+
+    {% include "scripts.html" %}
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="booking" class="booking">
+    <div class="container text-center">
+        <header>
+            <h2>Order your table</h2>
+            <h3>Enjoy your meal at our restaurant</h3>
+        </header>
+
+        <div class="row">
+            <div class="form-holder col-md-10 col-md-push-1 text-center">
+                <div class="ribbon">
+                    <i class="fa fa-star"></i>
+                </div>
+
+                <h2>Make a reservation</h2>
+                <h3>Book your table now</h3>
+
+                <br>
+                <h4>{{message}}</h4>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
